@@ -5,7 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 
-import Example from "../Example";
+import Example from ".";
 
 const components = storiesOf("Components|Buttons", module);
 components
