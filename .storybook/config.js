@@ -9,7 +9,7 @@ function loadStories() {
   let req = require.context("../src/components", true, /.(tsx|js)$/);
   req.keys().forEach(filename => req(filename));
 
-  req = require.context("../src/Example", true, /.stories.(tsx|js)$/);
+  req = require.context("../src", true, /.stories.(tsx|js)$/);
   req.keys().forEach(filename => req(filename));
 }
 
